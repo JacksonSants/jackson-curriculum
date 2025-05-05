@@ -2,6 +2,8 @@ import React from 'react';
 import resumeData from '../data/resumeData';
 import { Download } from 'lucide-react';
 
+import background from '../Assets/image.png'
+
 const Hero: React.FC = () => {
   return (
     <section className="relative h-screen flex items-center" id="hero">
@@ -9,7 +11,7 @@ const Hero: React.FC = () => {
       <div 
         className="absolute inset-0 bg-gradient-to-r from-blue-900 to-indigo-900"
         style={{ 
-          backgroundImage: 'url("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")',
+          backgroundImage: `url(${background})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundBlendMode: 'overlay',

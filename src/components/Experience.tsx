@@ -7,7 +7,7 @@ const Experience: React.FC = () => {
     <section id="experience" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900">Work Experience</h2>
+          <h2 className="text-3xl font-bold text-gray-900">Experiência</h2>
           <div className="w-16 h-1 bg-blue-500 mx-auto mt-3 mb-6"></div>
           <p className="text-gray-600 max-w-3xl mx-auto">
             My professional journey and the valuable experiences I've gained along the way

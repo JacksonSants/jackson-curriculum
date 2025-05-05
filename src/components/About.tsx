@@ -15,13 +15,13 @@ const About: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-8">
           {/* Personal Info */}
           <div className="md:w-1/3 bg-gray-50 p-6 rounded-lg shadow-sm">
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Personal Information</h3>
-            
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Informações Pessoais</h3>
+
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-blue-500 mt-0.5" />
                 <div>
-                  <p className="text-sm text-gray-500">Location</p>
+                  <p className="text-sm text-gray-500">Localização</p>
                   <p className="text-gray-800">{resumeData.location}</p>
                 </div>
               </li>
@@ -49,12 +49,12 @@ const About: React.FC = () => {
             <div className="flex space-x-3">
               {resumeData.socialLinks.map((link, index) => {
                 // Import the icon dynamically
-                const IconComponent = React.lazy(() => import('lucide-react').then(mod => ({ 
-                  default: mod[link.icon as keyof typeof mod] 
+                const IconComponent = React.lazy(() => import('lucide-react').then(mod => ({
+                  default: mod[link.icon as keyof typeof mod]
                 })));
 
                 return (
-                  <a 
+                  <a
                     key={index}
                     href={link.url}
                     target="_blank"
@@ -70,32 +70,33 @@ const About: React.FC = () => {
               })}
             </div>
           </div>
-          
+
           {/* About Text */}
           <div className="md:w-2/3">
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Quem eu sou?</h3>
-            
+
             <p className="text-gray-700 leading-relaxed mb-6">
               {resumeData.about}
             </p>
-            
+
             <p className="text-gray-700 leading-relaxed mb-6">
-              I'm passionate about creating intuitive, accessible, and performant web applications that provide exceptional user experiences. My approach combines technical expertise with a keen eye for design and usability.
+              Sou apaixonado por criar aplicações web intuitivas e acessíveis, que proporcionam experiências excepcionais aos usuários. Minha abordagem combina conhecimento técnico com um olhar atento para design e usabilidade.
             </p>
-            
+
             <p className="text-gray-700 leading-relaxed mb-8">
-              When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or enjoying outdoor activities to maintain a healthy work-life balance.
+              Quando não estou programando, gosto de explorar novas tecnologias, contribuir com projetos de código aberto ou aproveitar atividades ao ar livre para manter um equilíbrio saudável entre vida pessoal e profissional.
             </p>
-            
+
+
             <div className="flex flex-wrap gap-4">
-              <a 
-                href="#experience" 
+              <a
+                href="#experience"
                 className="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-colors duration-300"
               >
                 Minhas experiências
               </a>
-              <a 
-                href="#skills" 
+              <a
+                href="#skills"
                 className="bg-indigo-500 text-white px-6 py-3 rounded-full hover:bg-indigo-600 transition-colors duration-300"
               >
                 Minhas habilidades
