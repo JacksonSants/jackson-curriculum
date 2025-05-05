@@ -300,7 +300,7 @@ const resumeData: ResumeData = {
     },
     {
       "title": "Gemini e Node.js: desenvolva um Chatbot com a IA do Google",
-      "workload": "8h"
+      "workload": "9h"
     }
   ]
 };
